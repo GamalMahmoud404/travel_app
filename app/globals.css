@@ -1470,3 +1470,65 @@ ul { margin: 0; padding: 0; list-style: none; }
   .nav__bell, .nav__theme { width: 32px; height: 32px; }
   .nav__burger { width: 34px; height: 34px; }
 }
+
+/* ==========================================================================
+   قائمة الهاتف
+   زر البرجر يظهر تحت 900px حيث تُخفى .nav__links. القائمة تنسدل من تحت
+   الشريط الثابت (فيبقى الزر ظاهرًا للإغلاق) وخلفها طبقة تُغلق باللمس.
+   ========================================================================== */
+
+.nav__backdrop {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  z-index: 55;
+  border: 0;
+  background: rgba(15, 23, 42, .42);
+  animation: nav-fade .18s ease-out;
+}
+
+.nav__menu {
+  position: fixed;
+  top: var(--header-h);
+  inset-inline: 0;
+  z-index: 58;
+  display: grid;
+  padding: 6px 16px 14px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  max-height: calc(100dvh - var(--header-h));
+  overflow-y: auto;
+  animation: nav-drop .18s ease-out;
+}
+
+.nav__menu-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.nav__menu-link:last-child { border-bottom: 0; }
+.nav__menu-link:active { background: var(--surface-hover); }
+.nav__menu-link.is-active { color: var(--secondary); background: var(--secondary-050); }
+
+@keyframes nav-drop {
+  from { opacity: 0; transform: translateY(-8px); }
+}
+@keyframes nav-fade {
+  from { opacity: 0; }
+}
+
+/* قفل التمرير داخل نقطة الكسر وحدها — فوقها يسقط بلا أي حدث JS */
+@media (max-width: 900px) {
+  body.is-nav-open { overflow: hidden; }
+}
+
+/* تكبير النافذة وهي مفتوحة: الشريط الأفقي يعود، فلا تبقى القائمة معلّقة */
+@media (min-width: 901px) {
+  .nav__backdrop, .nav__menu { display: none; }
+}
