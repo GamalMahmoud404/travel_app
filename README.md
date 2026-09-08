@@ -19,7 +19,9 @@
 
 ```bash
 npm install
-cp .env.example .env      # ثم ضع رابط الاتصال في DATABASE_URL
+cp .env.example .env      # ثم املأ DATABASE_URL و AUTH_SECRET
+                          # AUTH_SECRET مطلوب — بدونه يرمي التطبيق عند أول جلسة:
+                          # node -e "console.log(require('crypto').randomBytes(48).toString('base64url'))"
 npm run db:generate       # توليد عميل Prisma
 npm run db:push           # مزامنة الـ schema مع القاعدة
 npm run db:seed           # زرع محتوى التصميم
