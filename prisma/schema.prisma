@@ -1,0 +1,437 @@
+// رحلتي — Prisma schema (MongoDB / Atlas)
+// prisma db push  →  يزامن الـ schema مع قاعدة البيانات (لا migrations في MongoDB)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+/* ------------------------------------------------------------ أنواع مضمّنة */
+
+type Amenity {
+  label String
+  icon  String
+}
+
+type RoomSpec {
+  label String
+  icon  String
+}
+
+type GuideLanguage {
+  label   String
+  primary Boolean @default(false)
+}
+
+type BookingFact {
+  label String
+  icon  String
+}
+
+/* ------------------------------------------------------------------ فنادق */
+
+model Hotel {
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
+  slug       String    @unique
+  name       String
+  location   String
+  rating     Float
+  reviews    Int       @default(0)
+  image      String
+  tags       String[]
+  extraTags  Int       @default(0)
+  cancel     String
+  price      Int
+  was        Int?
+  discount   Int?
+  unit       String
+  stars      Int       @default(5)
+  starsLabel String?
+  intro      String?
+  gallery    String[]
+  moreCount  Int       @default(0)
+  amenities  Amenity[]
+  about      String[]
+  order      Int       @default(0)
+  rooms      Room[]
+  createdAt  DateTime  @default(now())
+}
+
+model Room {
+  id      String     @id @default(auto()) @map("_id") @db.ObjectId
+  slug    String
+  name    String
+  image   String
+  price   Int
+  specs   RoomSpec[]
+  order   Int        @default(0)
+  hotelId String     @db.ObjectId
+  hotel   Hotel      @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+
+  @@unique([hotelId, slug])
+}
+
+/* ------------------------------------------------------------------ أنشطة */
+
+model Activity {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  slug     String  @unique
+  name     String
+  duration String
+  image    String
+  rating   Float
+  desc     String
+  slot     String
+  scarce   String?
+  price    Int
+  unit     String
+  order    Int     @default(0)
+}
+
+/* ---------------------------------------------------------------- مواصلات */
+
+model Car {
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  slug         String @unique
+  name         String
+  image        String
+  rating       Float
+  contract     String
+  contractNote String
+  price        Int
+  unit         String
+  order        Int    @default(0)
+}
+
+/* ------------------------------------------------------- مرشدون سياحيون */
+
+model Guide {
+  id        String          @id @default(auto()) @map("_id") @db.ObjectId
+  slug      String          @unique
+  name      String
+  location  String
+  image     String
+  languages GuideLanguage[]
+  rating    Float
+  reviews   Int
+  price     String
+  unit      String
+  order     Int             @default(0)
+}
+
+/* ------------------------------------------------------------------ باقات */
+
+model Package {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  slug     String   @unique
+  name     String
+  location String
+  nights   String
+  image    String
+  desc     String
+  includes String[]
+  price    Int
+  was      Int
+  discount Int
+  save     Int
+  order    Int      @default(0)
+}
+
+/* ------------------------------------------------- أكثر الرحلات حجزًا */
+
+model TrendingTrip {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String @unique
+  meta     String
+  from     Int
+  discount Int
+  rating   Float
+  reviews  Int
+  order    Int    @default(0)
+}
+
+/* ---------------------------------------------------------------- حجوزات */
+
+model Booking {
+  id          String        @id @default(auto()) @map("_id") @db.ObjectId
+  ref         String
+  status      String // ok | wait | void
+  statusLabel String
+  title       String
+  location    String
+  image       String
+  facts       BookingFact[]
+  total       String
+  actions     String[]
+  tab         String // upcoming | pending | cancelled
+  order       Int           @default(0)
+  userId      String?       @db.ObjectId
+  user        User?         @relation(fields: [userId], references: [id])
+  createdAt   DateTime      @default(now())
+}
+
+/* --------------------------------------------------------------- المفضلة */
+
+model Favorite {
+  id           String  @id @default(auto()) @map("_id") @db.ObjectId
+  kind         String // hotels | activities | transport | packages
+  slug         String // مُعرّف العنصر في الكتالوج — عليه يقوم التبديل
+  name         String
+  location     String
+  locationIcon String?
+  image        String
+  rating       Float? // الباقات بلا تقييم
+  fromLabel    String
+  price        String
+  unit         String
+  cta          String
+  href         String
+  order        Int     @default(0)
+  userId       String? @db.ObjectId
+  user         User?   @relation(fields: [userId], references: [id])
+
+  // المفضلة خاصة بكل مستخدم: الاسم كان unique عامًّا فيمنع مستخدمًا ثانيًا
+  // من إضافة الفندق نفسه. القيد الصحيح على (المستخدم، النوع، المُعرّف).
+  @@unique([userId, kind, slug])
+}
+
+/* ---------------------------------------------------------- آراء العملاء */
+
+model Review {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  name   String @unique
+  trip   String
+  rating Int
+  text   String
+  avatar String
+  order  Int    @default(0)
+}
+
+/* -------------------------------------------------------------- المستخدم */
+
+model User {
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  email     String     @unique
+  name      String
+  fullName  String
+  phone     String
+  phoneAlt  String?
+  avatar    String
+  passwordHash String?
+  role         String  @default("user") // admin | user
+  notifyOff     String[]
+  bookings      Booking[]
+  favorites     Favorite[]
+  cards         PaymentCard[]
+  notifications Notification[]
+  createdAt DateTime   @default(now())
+}
+
+/* ==========================================================================
+   محتوى الواجهة — إعدادات الموقع، التنقّل، التذييل، تبويبات البحث،
+   عناوين الأقسام، طرق الدفع، وقوائم الفلاتر. كله يُقرأ من القاعدة.
+   ========================================================================== */
+
+type SiteNavLink {
+  label   String
+  href    String
+  hasMenu Boolean
+}
+
+type FooterLink {
+  label String
+  href  String
+}
+
+type FooterColumn {
+  title String
+  links FooterLink[]
+}
+
+type SocialLink {
+  label    String
+  platform String
+  href     String
+}
+
+model SiteSetting {
+  id            String         @id @default(auto()) @map("_id") @db.ObjectId
+  key           String         @unique
+  name          String
+  tagline       String
+  phone         String
+  email         String
+  address       String
+  heroTitle     String[]
+  heroSubtitle  String
+  heroImage     String
+  followLabel   String
+  defaultAvatar String
+  metaTitle     String
+  metaDescription String
+  copyright     String
+  footerNote    String
+  navLinks      SiteNavLink[]
+  footerColumns FooterColumn[]
+  socials       SocialLink[]
+}
+
+type SearchFieldDef {
+  label String
+  value String
+  icon  String
+}
+
+model SearchTab {
+  key       String           @id @map("_id")
+  label     String
+  icon      String
+  order     Int
+  headTitle String
+  headSub   String
+  fields    SearchFieldDef[]
+}
+
+model SectionCopy {
+  key       String  @id @map("_id")
+  title     String
+  highlight String?
+  sub       String?
+}
+
+model PaymentMethod {
+  key    String   @id @map("_id")
+  title  String
+  note   String
+  brands String[]
+  order  Int
+}
+
+model BookingTab {
+  key   String @id @map("_id")
+  label String
+  icon  String
+  order Int
+}
+
+model FavoriteFilter {
+  key   String @id @map("_id")
+  label String
+  order Int
+}
+
+model AccountNavItem {
+  key       String  @id @map("_id")
+  label     String
+  href      String
+  icon      String
+  order     Int
+  requires  String?
+}
+
+model SortOption {
+  key   String @id @map("_id")
+  label String
+  order Int
+}
+
+type AboutPillar {
+  icon  String
+  title String
+  text  String
+}
+
+model AboutPage {
+  key        String        @id @map("_id")
+  title      String
+  highlight  String?
+  paragraphs String[]
+  pillars    AboutPillar[]
+}
+
+type SummaryRow {
+  key  String
+  val  String
+  icon String
+}
+
+type CheckoutStepDef {
+  step  Int
+  label String
+}
+
+model CheckoutDraft {
+  key               String            @id @map("_id")
+  hotelSlug         String
+  roomSlug          String
+  nights            Int
+  taxes             Int
+  rows              SummaryRow[]
+  stayFacts         SummaryRow[]
+  cancellationFree  String
+  cancellationAfter String
+  honorifics        String[]
+  steps             CheckoutStepDef[]
+}
+
+/* ==========================================================================
+   وسائل الدفع والإشعارات
+   ملاحظة أمنية: لا يُخزَّن رقم البطاقة الكامل ولا CVV — فقط النوع وآخر 4 أرقام.
+   التخزين الحقيقي للبطاقات مسؤولية مزوّد الدفع (tokenization).
+   ========================================================================== */
+
+model PaymentCard {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  brand     String // visa | mastercard | meeza | card
+  last4     String
+  holder    String
+  expMonth  Int
+  expYear   Int
+  isDefault Boolean  @default(false)
+  userId    String   @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Notification {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  body      String
+  kind      String // booking | offer | system
+  read      Boolean  @default(false)
+  userId    String   @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model NotificationSetting {
+  key         String @id @map("_id")
+  label       String
+  description String
+  icon        String
+  group       String // channel | topic
+  order       Int
+}
+
+/* ==========================================================================
+   الأدوار والصلاحيات — تُقرأ من القاعدة، فتُعدَّل بلا نشر جديد
+   ========================================================================== */
+
+model Permission {
+  key   String @id @map("_id")
+  label String
+  group String // content | bookings | users | system
+  order Int
+}
+
+model Role {
+  key         String   @id @map("_id") // admin | user
+  label       String
+  description String
+  permissions String[]
+  order       Int
+}

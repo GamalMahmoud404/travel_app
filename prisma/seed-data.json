@@ -1,0 +1,3090 @@
+{
+  "hotels": [
+    {
+      "slug": "dahab-bay-resort",
+      "name": "دهب باي ريزورت",
+      "location": "المشربة، دهب – مصر",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "مسبح",
+        "إطلالة بحرية",
+        "مطاعم"
+      ],
+      "extraTags": 4,
+      "cancel": "إلغاء مجاني حتى 72 ساعة قبل الوصول",
+      "price": 2950,
+      "was": 3600,
+      "discount": 18,
+      "unit": "لليلة الواحدة",
+      "order": 0,
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "reviews": 1863,
+      "intro": "منتجع على خليج المشربة في دهب، يجمع بين شاطئ رملي هادئ وإطلالة مباشرة على جبال السعودية عبر الخليج، ومطاعم على الماء.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 28,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "يقع منتجع دهب باي على خليج المشربة، أهدأ أجزاء دهب، بشاطئ رملي خاص وممشى مطاعم على الماء مباشرة.",
+        "يوفر المنتجع ثلاثة مسابح ومركز غوص معتمد ينظّم رحلات إلى البلو هول والكانيون، مع إمكانية السنوركلينج من الشاطئ."
+      ],
+      "rooms": [
+        {
+          "slug": "bay-deluxe",
+          "name": "غرفة ديلوكس بإطلالة على الخليج",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2950,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "bay-twin",
+          "name": "غرفة بسريرين منفصلين",
+          "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3250,
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "bay-suite",
+          "name": "جناح بإطلالة بانورامية",
+          "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 4600,
+          "specs": [
+            {
+              "label": "3 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King + أريكة",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "blue-lagoon-dahab",
+      "name": "منتجع بلو لاجون دهب",
+      "location": "دهب، جنوب سيناء – مصر",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "شاطئ خاص",
+        "واي فاي",
+        "إفطار مجاني"
+      ],
+      "extraTags": 3,
+      "cancel": "إلغاء مجاني حتى 24 ساعة قبل الوصول",
+      "price": 2240,
+      "was": 2800,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "order": 1,
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "reviews": 1247,
+      "intro": "اكتشف سحر البحر الأحمر في منتجع بلو لاجون دهب. يقدم المنتجع تجربة فريدة تجمع بين الاسترخاء والمغامرة مع إطلالات بانورامية على البحر ومرافق متكاملة تضمن إقامة لا تُنسى.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 24,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقةالبدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "يتميز منتجع بلو لاجون دهب بموقعه المميز على ساحل البحر الأحمر، مما يجعله وجهة مثالية للباحثين عن الاسترخاء والاستمتاع بالطبيعة الساحرة. يوفر المنتجع غرفًا وأجنحة مجهزة بوسائل الراحة الحديثة، مع إطلالات خلابة على البحر والحدائق المحيطة.",
+        "يضم المنتجع مجموعة متنوعة من المرافق والخدمات، تشمل مسبحًا خارجيًا، شاطئًا خاصًا، مركزًا للغوص، سبا، مطاعم متنوعة ومناطق مخصصة للاسترخاء. كما يمكن للنزلاء الاستمتاع بمجموعة من الأنشطة البحرية والترفيهية التي تناسب الأزواج والعائلات."
+      ],
+      "rooms": [
+        {
+          "slug": "deluxe-double",
+          "name": "غرفة ديلوكس بسرير مزدوج",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=460&q=72",
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ],
+          "price": 2240,
+          "order": 0
+        },
+        {
+          "slug": "deluxe-twin",
+          "name": "غرفة ديلوكس بسريرين منفصلين",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=640&h=460&q=72",
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ],
+          "price": 3200,
+          "order": 1
+        },
+        {
+          "slug": "sea-view-suite",
+          "name": "جناح فاخر بإطلالة على البحر",
+          "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=640&h=460&q=72",
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ],
+          "price": 4200,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "slug": "sunrise-dahab",
+      "name": "فندق صن رايز دهب",
+      "location": "دهب، جنوب سيناء – مصر",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "مسبح",
+        "واي فاي",
+        "موقف سيارات"
+      ],
+      "extraTags": 2,
+      "cancel": "إلغاء مجاني حتى 48 ساعة قبل الوصول",
+      "price": 2450,
+      "was": 3000,
+      "discount": 18,
+      "unit": "لليلة الواحدة",
+      "order": 2,
+      "stars": 4,
+      "starsLabel": "فندق 4 نجوم",
+      "reviews": 1109,
+      "intro": "فندق عملي في قلب دهب على مسافة قصيرة من الممشى، بمسبح واسع وموقف سيارات مجاني وواي فاي في كل المرافق.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 20,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "موقع الفندق وسط دهب يجعله مناسبًا لمن يريد استكشاف المدينة ومطاعمها ومراكز الغوص بدل البقاء داخل المنتجع.",
+        "المرافق تشمل مسبحًا كبيرًا وتراسًا للإفطار وموقف سيارات مجاني، وترتّب الإدارة رحلات يومية إلى البلو هول ووادي الجني."
+      ],
+      "rooms": [
+        {
+          "slug": "standard-double",
+          "name": "غرفة قياسية مزدوجة",
+          "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2450,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير مزدوج",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "pool-view",
+          "name": "غرفة بإطلالة على المسبح",
+          "image": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2750,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "royal-beach-sharm",
+      "name": "منتجع رويال بيتش شرم",
+      "location": "خليج نعمة، شرم الشيخ – مصر",
+      "rating": 4.7,
+      "reviews": 2104,
+      "image": "https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "شاطئ خاص",
+        "مسبح لا نهائي",
+        "واي فاي"
+      ],
+      "extraTags": 5,
+      "cancel": "إلغاء مجاني حتى 48 ساعة قبل الوصول",
+      "price": 3150,
+      "was": 3900,
+      "discount": 19,
+      "unit": "لليلة الواحدة",
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "intro": "منتجع عائلي على خليج نعمة يجمع بين شاطئ خاص ومسابح متعددة ومطاعم عالمية، على خطوات من مركز المدينة وأسواقها.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 32,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "يقع منتجع رويال بيتش شرم على أحد أفضل مواقع خليج نعمة، بشاطئ رملي خاص ومنطقة شعاب مرجانية قريبة تناسب الغوص والسنوركلينج.",
+        "يضم المنتجع خمسة مسابح بينها مسبح لا نهائي ومسبح مغطى، ومنطقة ألعاب للأطفال، وسبا كامل، وستة مطاعم بأنظمة مفتوحة وبديلة."
+      ],
+      "order": 3,
+      "rooms": [
+        {
+          "slug": "standard-sea",
+          "name": "غرفة قياسية بإطلالة بحرية",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3150,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "family-suite",
+          "name": "جناح عائلي بغرفتين",
+          "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 5400,
+          "specs": [
+            {
+              "label": "4 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King + سريران",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "twin-garden",
+          "name": "غرفة سريرين بإطلالة حدائق",
+          "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3600,
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "coral-hills-sharm",
+      "name": "فندق كورال هيلز شرم",
+      "location": "أم السيد، شرم الشيخ – مصر",
+      "rating": 4.4,
+      "reviews": 1188,
+      "image": "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "مسبح",
+        "إفطار مجاني",
+        "قريب من الأسواق"
+      ],
+      "extraTags": 3,
+      "cancel": "إلغاء مجاني حتى 24 ساعة قبل الوصول",
+      "price": 1850,
+      "was": 2400,
+      "discount": 23,
+      "unit": "لليلة الواحدة",
+      "stars": 4,
+      "starsLabel": "فندق 4 نجوم",
+      "intro": "فندق اقتصادي مريح على تلال أم السيد، بإطلالات على البحر ومسبح واسع وخدمة نقل مجانية إلى الشاطئ.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 21,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "يوفر كورال هيلز إقامة عملية بسعر مناسب لمن يريد استكشاف شرم الشيخ بدل البقاء داخل المنتجع، مع نقل مجاني إلى الشاطئ وخليج نعمة.",
+        "الغرف مجهزة بتكييف وشاشة مسطحة وثلاجة صغيرة، والإفطار المفتوح مشمول في كل الأسعار."
+      ],
+      "order": 4,
+      "rooms": [
+        {
+          "slug": "standard",
+          "name": "غرفة قياسية مزدوجة",
+          "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 1850,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير مزدوج",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "twin",
+          "name": "غرفة بسريرين منفصلين",
+          "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2100,
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hurghada-marina",
+      "name": "منتجع الغردقة مارينا",
+      "location": "مارينا الغردقة – مصر",
+      "rating": 4.6,
+      "reviews": 1642,
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "على الممشى",
+        "مسبح",
+        "رياضات مائية"
+      ],
+      "extraTags": 4,
+      "cancel": "إلغاء مجاني حتى 48 ساعة قبل الوصول",
+      "price": 2680,
+      "was": 3350,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "intro": "إقامة على ممشى مارينا الغردقة بمزيج من الحياة الليلية والرياضات المائية، مع رصيف خاص لرحلات الغوص واليخوت.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 27,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "يتميز المنتجع بموقعه على الممشى مباشرة، فتصل إلى المطاعم والمقاهي والمحال سيرًا على الأقدام.",
+        "يشغّل المنتجع مركزًا للرياضات المائية يقدّم الغوص والسنوركلينج والكايت سيرف مع مدربين معتمدين، ورصيفًا خاصًا لانطلاق الرحلات البحرية."
+      ],
+      "order": 5,
+      "rooms": [
+        {
+          "slug": "marina-view",
+          "name": "غرفة بإطلالة على المارينا",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2680,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "pool-access",
+          "name": "غرفة بمدخل مباشر للمسبح",
+          "image": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3400,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "twin-marina",
+          "name": "غرفة سريرين بإطلالة مارينا",
+          "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2950,
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "marsa-alam-pearl",
+      "name": "منتجع مرسى علم بيرل",
+      "location": "مرسى علم – مصر",
+      "rating": 4.8,
+      "reviews": 934,
+      "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "شعاب مرجانية",
+        "شاطئ خاص",
+        "مركز غوص"
+      ],
+      "extraTags": 4,
+      "cancel": "إلغاء مجاني حتى 72 ساعة قبل الوصول",
+      "price": 3450,
+      "was": 4300,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "intro": "منتجع هادئ أمام شعاب مرجانية يمكن الوصول إليها من الشاطئ مباشرة، مثالي لمحبي الغوص والسكون.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 24,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "الشعاب المرجانية على بعد أمتار من الشاطئ، فيمكن السنوركلينج دون قارب — وهي ميزة يصعب إيجادها في منتجعات البحر الأحمر.",
+        "المنتجع بعيد عن الازدحام ويناسب الإقامات الطويلة، ويضم مركز غوص معتمد ينظّم رحلات يومية إلى مواقع الدولفين هاوس وسمداي."
+      ],
+      "order": 6,
+      "rooms": [
+        {
+          "slug": "reef-view",
+          "name": "غرفة بإطلالة على الشعاب",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3450,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "beach-villa",
+          "name": "فيلا على الشاطئ",
+          "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 6200,
+          "specs": [
+            {
+              "label": "4 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King + أريكة",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "winter-palace-luxor",
+      "name": "فندق وينتر بالاس الأقصر",
+      "location": "كورنيش النيل، الأقصر – مصر",
+      "rating": 4.9,
+      "reviews": 1476,
+      "image": "https://images.unsplash.com/photo-1585544314038-a0d3769d0193?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "إطلالة على النيل",
+        "حدائق تاريخية",
+        "مسبح"
+      ],
+      "extraTags": 5,
+      "cancel": "إلغاء مجاني حتى 72 ساعة قبل الوصول",
+      "price": 4100,
+      "was": 5200,
+      "discount": 21,
+      "unit": "لليلة الواحدة",
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "intro": "فندق تاريخي على كورنيش النيل بحدائق واسعة وطراز كولونيالي، على مسافة قصيرة من معبد الأقصر.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585544314038-a0d3769d0193?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 30,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "بُني الفندق في أواخر القرن التاسع عشر واستضاف رحّالة ومكتشفين، ويحتفظ بطرازه المعماري وأثاثه الكلاسيكي بعد ترميم كامل.",
+        "الحدائق الملكية تمتد على مساحة واسعة بأشجار نادرة ومسبح كبير، والموقع يتيح الوصول سيرًا إلى معبد الأقصر ومركب العبّارة إلى البر الغربي."
+      ],
+      "order": 7,
+      "rooms": [
+        {
+          "slug": "nile-deluxe",
+          "name": "غرفة ديلوكس بإطلالة على النيل",
+          "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 4100,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "garden-room",
+          "name": "غرفة على الحدائق",
+          "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3400,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير مزدوج",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "royal-suite",
+          "name": "الجناح الملكي",
+          "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 8900,
+          "specs": [
+            {
+              "label": "3 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nile-view-aswan",
+      "name": "فندق النيل أسوان",
+      "location": "كورنيش أسوان – مصر",
+      "rating": 4.5,
+      "reviews": 812,
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "إطلالة على النيل",
+        "شرفة",
+        "إفطار مجاني"
+      ],
+      "extraTags": 3,
+      "cancel": "إلغاء مجاني حتى 24 ساعة قبل الوصول",
+      "price": 1980,
+      "was": 2500,
+      "discount": 21,
+      "unit": "لليلة الواحدة",
+      "stars": 4,
+      "starsLabel": "فندق 4 نجوم",
+      "intro": "فندق مريح على كورنيش أسوان بإطلالات على النيل وجزيرة إلفنتين، ونقطة انطلاق مناسبة لأبو سمبل وفيلة.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 19,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "معظم الغرف بشرفة مطلة على النيل ومراكب الفلوكة، وهي من أجمل إطلالات أسوان خصوصًا وقت الغروب.",
+        "ينظّم الفندق رحلات يومية إلى معبد فيلة والسد العالي وأبو سمبل، وخدمة نقل من ومطار أسوان."
+      ],
+      "order": 8,
+      "rooms": [
+        {
+          "slug": "nile-balcony",
+          "name": "غرفة بشرفة على النيل",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 1980,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير مزدوج",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "twin-nile",
+          "name": "غرفة سريرين على النيل",
+          "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2200,
+          "specs": [
+            {
+              "label": "2 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران Twin",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cairo-towers",
+      "name": "فندق كايرو تاورز",
+      "location": "وسط البلد، القاهرة – مصر",
+      "rating": 4.3,
+      "reviews": 2380,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "وسط المدينة",
+        "واي فاي سريع",
+        "قاعات اجتماعات"
+      ],
+      "extraTags": 4,
+      "cancel": "إلغاء مجاني حتى 24 ساعة قبل الوصول",
+      "price": 2250,
+      "was": 2800,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "stars": 4,
+      "starsLabel": "فندق 4 نجوم",
+      "intro": "فندق أعمال في قلب القاهرة قريب من المتحف المصري وميدان التحرير، بمواصلات ميسّرة إلى كل الاتجاهات.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 22,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        }
+      ],
+      "about": [
+        "يناسب رحلات العمل والزيارات القصيرة: مكتب في كل غرفة، وواي فاي سريع، وقاعات اجتماعات مجهزة.",
+        "الموقع على مسافة قصيرة من المتحف المصري وخان الخليلي ومحطة مترو، ما يجعله عمليًا لاستكشاف القاهرة بلا سيارة."
+      ],
+      "order": 9,
+      "rooms": [
+        {
+          "slug": "business",
+          "name": "غرفة أعمال",
+          "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2250,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "city-view",
+          "name": "غرفة بإطلالة على المدينة",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2600,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "alamein-new-resort",
+      "name": "منتجع العلمين الجديدة",
+      "location": "العلمين الجديدة – مصر",
+      "rating": 4.7,
+      "reviews": 645,
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "شاطئ خاص",
+        "مسبح لا نهائي",
+        "أنشطة صيفية"
+      ],
+      "extraTags": 4,
+      "cancel": "إلغاء مجاني حتى 48 ساعة قبل الوصول",
+      "price": 3900,
+      "was": 4900,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "stars": 5,
+      "starsLabel": "فندق 5 نجوم",
+      "intro": "منتجع صيفي على ساحل العلمين الجديدة بمياه فيروزية ورمال بيضاء، وأجواء موسمية نشطة.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 26,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "رمال بيضاء ومياه فيروزية هي علامة ساحل العلمين، والمنتجع يقع على أحد أهدأ أجزائه مع شاطئ خاص واسع.",
+        "الموسم الصيفي يشهد فعاليات ومطاعم موسمية على الشاطئ، وتتوفر رياضات مائية وملاعب ونادٍ للأطفال."
+      ],
+      "order": 10,
+      "rooms": [
+        {
+          "slug": "sea-front",
+          "name": "غرفة أمام البحر",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3900,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "chalet",
+          "name": "شاليه بغرفتين",
+          "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 6800,
+          "specs": [
+            {
+              "label": "4 أشخاص",
+              "icon": "users"
+            },
+            {
+              "label": "سريران King",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "siwa-eco-lodge",
+      "name": "سيوة إيكو لودج",
+      "location": "واحة سيوة – مصر",
+      "rating": 4.8,
+      "reviews": 428,
+      "image": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?auto=format&fit=crop&w=640&h=440&q=72",
+      "tags": [
+        "بناء بالكرشيف",
+        "عيون طبيعية",
+        "بلا كهرباء"
+      ],
+      "extraTags": 3,
+      "cancel": "إلغاء مجاني حتى 72 ساعة قبل الوصول",
+      "price": 2400,
+      "was": 3000,
+      "discount": 20,
+      "unit": "لليلة الواحدة",
+      "stars": 4,
+      "starsLabel": "فندق 4 نجوم",
+      "intro": "إقامة بيئية في واحة سيوة، مبنية بالكرشيف والملح ومضاءة بالشموع، بين بحيرات مالحة وعيون طبيعية.",
+      "gallery": [
+        "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?auto=format&fit=crop&w=640&h=780&q=72",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=480&h=330&q=72",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=480&h=330&q=72"
+      ],
+      "moreCount": 16,
+      "amenities": [
+        {
+          "label": "مطعم",
+          "icon": "utensils"
+        },
+        {
+          "label": "موقف سيارات",
+          "icon": "parking"
+        },
+        {
+          "label": "واي فاي",
+          "icon": "wifi"
+        },
+        {
+          "label": "مسبح خارجي",
+          "icon": "waves"
+        },
+        {
+          "label": "مسبح أطفال",
+          "icon": "baby"
+        },
+        {
+          "label": "مركز للياقة البدنية",
+          "icon": "dumbbell"
+        }
+      ],
+      "about": [
+        "اللودج مبني بمواد محلية بالكامل (الكرشيف والطين والنخيل) وبلا كهرباء — الإضاءة بالشموع والفوانيس، والتبريد طبيعي عبر التصميم.",
+        "حول اللودج عيون طبيعية دافئة وبحيرات مالحة عالية الطفو، وتنظّم الإدارة رحلات إلى الصحراء البيضاء وجبل الدكرور وسفاري الكثبان."
+      ],
+      "order": 11,
+      "rooms": [
+        {
+          "slug": "karshif",
+          "name": "غرفة كرشيف تقليدية",
+          "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 2400,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير مزدوج",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        },
+        {
+          "slug": "spring-suite",
+          "name": "جناح على العين الطبيعية",
+          "image": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=640&h=460&q=72",
+          "price": 3600,
+          "specs": [
+            {
+              "label": "شخصان",
+              "icon": "users"
+            },
+            {
+              "label": "سرير King كبير",
+              "icon": "bed"
+            },
+            {
+              "label": "شرفة خاصة",
+              "icon": "balcony"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "slug": "dahab-diving",
+      "name": "رحلة غوص للمبتدئين في دهب",
+      "duration": "ساعتان",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.8,
+      "desc": "رحلة غوص آمنة للمبتدئين مع مدربين محترفين لاكتشاف عالم البحر الأحمر.",
+      "slot": "متاح اليوم – 2:00 م",
+      "price": 1200,
+      "unit": "للفرد الواحد",
+      "order": 0
+    },
+    {
+      "slug": "wadi-qany-safari",
+      "name": "سفاري وادي قني بالصحراء",
+      "duration": "3 ساعات",
+      "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.6,
+      "desc": "مغامرة سفاري شيقة وسط جبال دهب وصحرائها مع إطلالات طبيعية خلابة.",
+      "slot": "متاح اليوم – 3:00 م",
+      "price": 650,
+      "unit": "للفرد الواحد",
+      "order": 1
+    },
+    {
+      "slug": "dahab-yacht",
+      "name": "رحلة يخت في دهب",
+      "duration": "3 ساعات",
+      "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "desc": "استمتع بجولة بحرية مميزة في مياه دهب الصافية مع إطلالات خلابة وأجواء مريحة على متن يخت فاخر.",
+      "slot": "متاح اليوم – 5:00 م",
+      "scarce": "يتبقى 4 أماكن",
+      "price": 1500,
+      "unit": "للفرد الواحد",
+      "order": 2
+    },
+    {
+      "slug": "snorkel-ras-mohamed",
+      "name": "سنوركلينج في محمية رأس محمد",
+      "duration": "6 ساعات",
+      "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "desc": "رحلة بحرية إلى أشهر محمية طبيعية في البحر الأحمر مع وجبة غداء على القارب.",
+      "slot": "متاح غدًا – 8:00 ص",
+      "scarce": null,
+      "price": 950,
+      "unit": "للفرد الواحد",
+      "order": 3
+    },
+    {
+      "slug": "pyramids-tour",
+      "name": "جولة الأهرامات وأبو الهول",
+      "duration": "5 ساعات",
+      "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.8,
+      "desc": "جولة مع مرشد متخصص في هضبة الجيزة تشمل الأهرامات الثلاثة وأبو الهول ومعبد الوادي.",
+      "slot": "متاح اليوم – 9:00 ص",
+      "scarce": null,
+      "price": 700,
+      "unit": "للفرد الواحد",
+      "order": 4
+    },
+    {
+      "slug": "karnak-temples",
+      "name": "جولة معابد الكرنك والأقصر",
+      "duration": "4 ساعات",
+      "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "desc": "زيارة معبد الكرنك وطريق الكباش ومعبد الأقصر مع شرح تاريخي مفصّل.",
+      "slot": "متاح اليوم – 7:30 ص",
+      "scarce": null,
+      "price": 620,
+      "unit": "للفرد الواحد",
+      "order": 5
+    },
+    {
+      "slug": "nile-felucca-aswan",
+      "name": "رحلة فلوكة على النيل في أسوان",
+      "duration": "ساعتان",
+      "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.7,
+      "desc": "إبحار هادئ بالفلوكة الشراعية بين جزيرة إلفنتين والنباتات وقت الغروب.",
+      "slot": "متاح اليوم – 4:30 م",
+      "scarce": null,
+      "price": 380,
+      "unit": "للفرد الواحد",
+      "order": 6
+    },
+    {
+      "slug": "siwa-desert-camp",
+      "name": "تخييم ليلي تحت النجوم في سيوة",
+      "duration": "ليلة كاملة",
+      "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "desc": "سفاري كثبان ثم عشاء بدوي ومبيت في مخيم صحراوي بعيد عن أضواء المدن.",
+      "slot": "متاح الخميس – 3:00 م",
+      "scarce": "يتبقى 6 أماكن",
+      "price": 1750,
+      "unit": "للفرد الواحد",
+      "order": 7
+    },
+    {
+      "slug": "kitesurf-hurghada",
+      "name": "كايت سيرف للمبتدئين في الغردقة",
+      "duration": "3 ساعات",
+      "image": "https://images.unsplash.com/photo-1502933691298-84fc14542831?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.6,
+      "desc": "درس تمهيدي في مياه ضحلة آمنة مع مدرب معتمد وكامل التجهيزات.",
+      "slot": "متاح اليوم – 11:00 ص",
+      "scarce": null,
+      "price": 1400,
+      "unit": "للفرد الواحد",
+      "order": 8
+    },
+    {
+      "slug": "spa-sharm",
+      "name": "جلسة سبا وتدليك بالأحجار الساخنة",
+      "duration": "90 دقيقة",
+      "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.8,
+      "desc": "جلسة استرخاء كاملة تشمل التدليك بالأحجار الساخنة والساونا والجاكوزي.",
+      "slot": "متاح اليوم – 6:00 م",
+      "scarce": null,
+      "price": 850,
+      "unit": "للفرد الواحد",
+      "order": 9
+    }
+  ],
+  "cars": [
+    {
+      "slug": "hyundai-accent",
+      "name": "هيونداي أكسنت",
+      "image": "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 1200,
+      "unit": "إيجار اليوم",
+      "order": 0
+    },
+    {
+      "slug": "mercedes-c200",
+      "name": "مرسيدس C200",
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 2200,
+      "unit": "إيجار اليوم",
+      "order": 1
+    },
+    {
+      "slug": "hyundai-tucson",
+      "name": "هيونداي توسان",
+      "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 1800,
+      "unit": "إيجار اليوم",
+      "order": 2
+    },
+    {
+      "slug": "kia-cerato",
+      "name": "كيا سيراتو",
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.7,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 1400,
+      "unit": "إيجار اليوم",
+      "order": 3
+    },
+    {
+      "slug": "bmw-320i",
+      "name": "بي إم دبليو 320i",
+      "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.8,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 2600,
+      "unit": "إيجار اليوم",
+      "order": 4
+    },
+    {
+      "slug": "mercedes-e200",
+      "name": "مرسيدس E200",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.9,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 3200,
+      "unit": "إيجار اليوم",
+      "order": 5
+    },
+    {
+      "slug": "nissan-sunny",
+      "name": "نيسان صني",
+      "image": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.5,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 1100,
+      "unit": "إيجار اليوم",
+      "order": 6
+    },
+    {
+      "slug": "hyundai-h1",
+      "name": "هيونداي H1 (9 مقاعد)",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=640&h=440&q=72",
+      "rating": 4.6,
+      "contract": "عقد إيجار عند الاستلام",
+      "contractNote": "توقيع عقد الإيجار عند استلام السيارة",
+      "price": 2400,
+      "unit": "إيجار اليوم",
+      "order": 7
+    }
+  ],
+  "guides": [
+    {
+      "slug": "ahmed-elmasry",
+      "name": "احمد المصري",
+      "location": "القاهرة، مصر",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية"
+        },
+        {
+          "label": "الفرنسية"
+        }
+      ],
+      "rating": 4.96,
+      "reviews": 150,
+      "price": "35$",
+      "unit": "/ اليوم",
+      "order": 0
+    },
+    {
+      "slug": "sara-mohamed",
+      "name": "سارة محمد",
+      "location": "تونس",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الفرنسية"
+        }
+      ],
+      "rating": 4.8,
+      "reviews": 90,
+      "price": "20$",
+      "unit": "/ اليوم",
+      "order": 1
+    },
+    {
+      "slug": "bassam-elshamy",
+      "name": "بسام الشامي",
+      "location": "الأقصر",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية"
+        }
+      ],
+      "rating": 4.96,
+      "reviews": 150,
+      "price": "30$",
+      "unit": "/ اليوم",
+      "order": 2
+    },
+    {
+      "slug": "mahmoud-elfayoumi",
+      "name": "محمود الفيومي",
+      "location": "الجيزة، مصر",
+      "image": "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية",
+          "primary": false
+        },
+        {
+          "label": "الألمانية",
+          "primary": false
+        }
+      ],
+      "rating": 4.92,
+      "reviews": 214,
+      "price": "40$",
+      "unit": "/ اليوم",
+      "order": 3
+    },
+    {
+      "slug": "nour-abdelaziz",
+      "name": "نور عبد العزيز",
+      "location": "الأقصر، مصر",
+      "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية",
+          "primary": false
+        }
+      ],
+      "rating": 4.88,
+      "reviews": 132,
+      "price": "32$",
+      "unit": "/ اليوم",
+      "order": 4
+    },
+    {
+      "slug": "hala-mansour",
+      "name": "هالة منصور",
+      "location": "أسوان، مصر",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الفرنسية",
+          "primary": false
+        },
+        {
+          "label": "الإنجليزية",
+          "primary": false
+        }
+      ],
+      "rating": 4.95,
+      "reviews": 176,
+      "price": "28$",
+      "unit": "/ اليوم",
+      "order": 5
+    },
+    {
+      "slug": "tarek-hamdy",
+      "name": "طارق حمدي",
+      "location": "شرم الشيخ، مصر",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية",
+          "primary": false
+        },
+        {
+          "label": "الروسية",
+          "primary": false
+        }
+      ],
+      "rating": 4.79,
+      "reviews": 98,
+      "price": "38$",
+      "unit": "/ اليوم",
+      "order": 6
+    },
+    {
+      "slug": "salma-eldeeb",
+      "name": "سلمى الديب",
+      "location": "الغردقة، مصر",
+      "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=480&h=480&q=72",
+      "languages": [
+        {
+          "label": "العربية",
+          "primary": true
+        },
+        {
+          "label": "الإنجليزية",
+          "primary": false
+        }
+      ],
+      "rating": 4.86,
+      "reviews": 121,
+      "price": "26$",
+      "unit": "/ اليوم",
+      "order": 7
+    }
+  ],
+  "packages": [
+    {
+      "slug": "sharm-relax",
+      "name": "باقة شرم للاسترخاء",
+      "location": "شرم الشيخ – مصر",
+      "nights": "5 أيام 4 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "إقامة فاخرة على البحر الأحمر مع أنشطة بحرية وتجارب استرخاء.",
+      "includes": [
+        "سفاري",
+        "Snorkeling",
+        "فندق 5 نجوم",
+        "إفطار + عشاء يومي",
+        "رحلة بحرية يخت"
+      ],
+      "price": 6900,
+      "was": 8100,
+      "discount": 15,
+      "save": 1200,
+      "order": 0
+    },
+    {
+      "slug": "luxor-culture",
+      "name": "باقة الأقصر الثقافية",
+      "location": "الأقصر – مصر",
+      "nights": "3 أيام 2 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "اكتشف حضارة الفراعنة وجمال الأقصر في جولة ثقافية متكاملة.",
+      "includes": [
+        "مرشد سياحي خاص",
+        "فندق 4 نجوم",
+        "إفطار يومي",
+        "جولة معابد الكرنك والأقصر"
+      ],
+      "price": 3750,
+      "was": 4600,
+      "discount": 18,
+      "save": 850,
+      "order": 1
+    },
+    {
+      "slug": "istanbul-classic",
+      "name": "باقة إسطنبول الكلاسيكية",
+      "location": "إسطنبول – تركيا",
+      "nights": "5 أيام 4 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "استمتع بجمال إسطنبول التاريخي مع جولات سياحية وتجارب تسوق مميزة.",
+      "includes": [
+        "إفطار + عشاء يومي",
+        "فندق 5 نجوم",
+        "توصيل من المطار",
+        "جولة البوسفور مع عشاء"
+      ],
+      "price": 7450,
+      "was": 9500,
+      "discount": 22,
+      "save": 2050,
+      "order": 2
+    },
+    {
+      "slug": "cairo-heritage",
+      "name": "باقة القاهرة التاريخية",
+      "location": "القاهرة – مصر",
+      "nights": "4 أيام 3 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "الأهرامات والمتحف المصري وخان الخليلي والقاهرة الإسلامية في جولة واحدة.",
+      "includes": [
+        "فندق 4 نجوم",
+        "إفطار يومي",
+        "مرشد سياحي خاص",
+        "جولة الأهرامات",
+        "المتحف المصري الكبير"
+      ],
+      "price": 4200,
+      "was": 5300,
+      "discount": 21,
+      "save": 1100,
+      "order": 3
+    },
+    {
+      "slug": "aswan-nile-cruise",
+      "name": "باقة أسوان والرحلة النيلية",
+      "location": "أسوان والأقصر – مصر",
+      "nights": "5 أيام 4 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "رحلة نيلية بين أسوان والأقصر مع زيارة أبو سمبل وفيلة وكوم أمبو.",
+      "includes": [
+        "باخرة 5 نجوم",
+        "إقامة كاملة",
+        "مرشد سياحي",
+        "أبو سمبل",
+        "معبد فيلة"
+      ],
+      "price": 8600,
+      "was": 10800,
+      "discount": 20,
+      "save": 2200,
+      "order": 4
+    },
+    {
+      "slug": "hurghada-diving",
+      "name": "باقة الغردقة للغوص",
+      "location": "الغردقة – مصر",
+      "nights": "5 أيام 4 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "أربع غطسات مع مركز معتمد، وإقامة على الممشى، ورحلة بحرية ليوم كامل.",
+      "includes": [
+        "فندق 5 نجوم",
+        "4 غطسات",
+        "تجهيزات الغوص",
+        "رحلة بحرية",
+        "إفطار + عشاء"
+      ],
+      "price": 5900,
+      "was": 7400,
+      "discount": 20,
+      "save": 1500,
+      "order": 5
+    },
+    {
+      "slug": "siwa-desert",
+      "name": "باقة سيوة الصحراوية",
+      "location": "واحة سيوة – مصر",
+      "nights": "4 أيام 3 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "واحة سيوة وعيونها الطبيعية وسفاري الكثبان ومبيت في مخيم صحراوي.",
+      "includes": [
+        "إيكو لودج",
+        "سفاري كثبان",
+        "مبيت صحراوي",
+        "العيون الطبيعية",
+        "إفطار + عشاء"
+      ],
+      "price": 4800,
+      "was": 6100,
+      "discount": 21,
+      "save": 1300,
+      "order": 6
+    },
+    {
+      "slug": "dubai-shopping",
+      "name": "باقة دبي للتسوق",
+      "location": "دبي – الإمارات",
+      "nights": "5 أيام 4 ليالٍ",
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=640&h=440&q=72",
+      "desc": "برج خليفة ودبي مول وسفاري الصحراء وجولة في دبي القديمة.",
+      "includes": [
+        "فندق 5 نجوم",
+        "إفطار يومي",
+        "برج خليفة",
+        "سفاري صحراوي",
+        "توصيل من المطار"
+      ],
+      "price": 14500,
+      "was": 18000,
+      "discount": 19,
+      "save": 3500,
+      "order": 7
+    }
+  ],
+  "trending": [
+    {
+      "name": "الأقصر – 3 أيام",
+      "meta": "2 ليال · إقامة + رحلات",
+      "from": 2105,
+      "discount": 12,
+      "rating": 4.8,
+      "reviews": 1130,
+      "order": 0
+    },
+    {
+      "name": "دهب – 3 أيام",
+      "meta": "2 ليال · إقامة + رحلات",
+      "from": 2605,
+      "discount": 15,
+      "rating": 4.7,
+      "reviews": 1190,
+      "order": 1
+    },
+    {
+      "name": "أسوان – 4 أيام",
+      "meta": "3 ليال · إقامة + رحلات",
+      "from": 2405,
+      "discount": 10,
+      "rating": 4.8,
+      "reviews": 980,
+      "order": 2
+    },
+    {
+      "name": "شرم الشيخ – 5 أيام",
+      "meta": "4 ليال · إقامة + رحلات",
+      "from": 4005,
+      "discount": 19,
+      "rating": 4.9,
+      "reviews": 1420,
+      "order": 3
+    },
+    {
+      "name": "الغردقة – 5 أيام",
+      "meta": "4 ليال · إقامة + غوص",
+      "from": 3905,
+      "discount": 17,
+      "rating": 4.8,
+      "reviews": 1260,
+      "order": 4
+    },
+    {
+      "name": "القاهرة – 4 أيام",
+      "meta": "3 ليال · إقامة + جولات",
+      "from": 3205,
+      "discount": 14,
+      "rating": 4.6,
+      "reviews": 2040,
+      "order": 5
+    },
+    {
+      "name": "مرسى علم – 6 أيام",
+      "meta": "5 ليال · إقامة + شعاب",
+      "from": 4505,
+      "discount": 20,
+      "rating": 4.9,
+      "reviews": 760,
+      "order": 6
+    },
+    {
+      "name": "سيوة – 4 أيام",
+      "meta": "3 ليال · إقامة + سفاري",
+      "from": 3605,
+      "discount": 16,
+      "rating": 4.9,
+      "reviews": 410,
+      "order": 7
+    },
+    {
+      "name": "العلمين – 4 أيام",
+      "meta": "3 ليال · إقامة + شاطئ",
+      "from": 4105,
+      "discount": 18,
+      "rating": 4.7,
+      "reviews": 580,
+      "order": 8
+    }
+  ],
+  "reviews": [
+    {
+      "name": "منى عبد الله",
+      "trip": "باقة شرم للاسترخاء",
+      "rating": 5,
+      "text": "رتّبت الرحلة كلها من مكان واحد — الفندق والغوص والمواصلات. وفّرت عليّ وقت البحث بين مواقع كثيرة.",
+      "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=75",
+      "order": 0
+    },
+    {
+      "name": "كريم حسن",
+      "trip": "رحلة غوص للمبتدئين في دهب",
+      "rating": 5,
+      "text": "الأسعار والمواعيد واضحة قبل الحجز، والإلغاء المجاني أعطاني راحة في اتخاذ القرار.",
+      "avatar": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&w=160&h=160&q=75",
+      "order": 1
+    },
+    {
+      "name": "ياسمين فؤاد",
+      "trip": "باقة الأقصر الثقافية",
+      "rating": 4,
+      "text": "المرشد السياحي كان اختيارًا ممتازًا، وبرنامج الرحلة اليومي ساعدنا نستغل كل يوم بأفضل شكل.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&h=160&q=75",
+      "order": 2
+    }
+  ],
+  "site": {
+    "key": "main",
+    "name": "رحلتي",
+    "tagline": "كل تفاصيل رحلتك في مكان واحد. خطط لرحلة أحلامك بسهولة وأمان.",
+    "phone": "+20 101 632 9068",
+    "email": "info@rehlati.com",
+    "address": "القاهرة الجديدة – القاهرة – مصر",
+    "heroTitle": [
+      "اكتشف وجهات أحلامك",
+      "واحجز بكل سهولة"
+    ],
+    "heroSubtitle": "الفنادق، الأنشطة، والمواصلات في منصة واحدة لتجربة سفر لا تُنسى",
+    "heroImage": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1440&h=720&q=72",
+    "followLabel": "تابعنا",
+    "copyright": "جميع الحقوق محفوظة.",
+    "footerNote": "تصميم واجهات المستخدم وتجربة الاستخدام لمنصة سفر متكاملة.",
+    "navLinks": [
+      {
+        "label": "الرئيسية",
+        "href": "/",
+        "hasMenu": false
+      },
+      {
+        "label": "الخدمات",
+        "href": "/#services",
+        "hasMenu": true
+      },
+      {
+        "label": "العروض",
+        "href": "/offers",
+        "hasMenu": false
+      },
+      {
+        "label": "حجوزاتي",
+        "href": "/bookings",
+        "hasMenu": false
+      },
+      {
+        "label": "آراء العملاء",
+        "href": "/reviews",
+        "hasMenu": false
+      }
+    ],
+    "footerColumns": [
+      {
+        "title": "استكشف",
+        "links": [
+          {
+            "label": "الوجهات",
+            "href": "/#services"
+          },
+          {
+            "label": "الرحلات",
+            "href": "/offers"
+          },
+          {
+            "label": "الأنشطة والتجارب",
+            "href": "/#services"
+          },
+          {
+            "label": "المرشدون السياحيون",
+            "href": "/#services"
+          },
+          {
+            "label": "العروض",
+            "href": "/offers"
+          }
+        ]
+      },
+      {
+        "title": "رحلتي",
+        "links": [
+          {
+            "label": "من نحن",
+            "href": "/about"
+          },
+          {
+            "label": "خطط رحلتك",
+            "href": "/"
+          },
+          {
+            "label": "حجوزاتي",
+            "href": "/bookings"
+          },
+          {
+            "label": "المفضلة",
+            "href": "/account/favorites"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "label": "إنستجرام",
+        "platform": "instagram",
+        "href": "#"
+      },
+      {
+        "label": "فيسبوك",
+        "platform": "facebook",
+        "href": "#"
+      },
+      {
+        "label": "تويتر",
+        "platform": "twitter",
+        "href": "#"
+      },
+      {
+        "label": "تيك توك",
+        "platform": "tiktok",
+        "href": "#"
+      }
+    ],
+    "metaTitle": "رحلتي — منصة حجز الرحلات والسفر",
+    "metaDescription": "رحلتي موقع سياحي متكامل يجمع الفنادق والأنشطة والمواصلات والمرشدين السياحيين في منصة واحدة لتجربة سفر لا تُنسى.",
+    "defaultAvatar": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&w=160&h=160&q=75"
+  },
+  "searchTabs": [
+    {
+      "key": "hotels",
+      "label": "فنادق",
+      "icon": "building",
+      "order": 0,
+      "headTitle": "وجدنا فندقًا مناسبًا",
+      "headSub": "أفضل الخيارات بناءً على وجهتك وتواريخ رحلتك",
+      "fields": [
+        {
+          "label": "إلى أين تريد الذهاب",
+          "value": "اختر واجهتك",
+          "icon": "pin"
+        },
+        {
+          "label": "تاريخ الوصول",
+          "value": "اختر التاريخ",
+          "icon": "calendar"
+        },
+        {
+          "label": "تاريخ المغادرة",
+          "value": "اختر التاريخ",
+          "icon": "calendar"
+        },
+        {
+          "label": "الغرف والضيوف",
+          "value": "2 غرفة · 5 ضيوف",
+          "icon": "users"
+        }
+      ]
+    },
+    {
+      "key": "activities",
+      "label": "أنشطة",
+      "icon": "camera",
+      "order": 1,
+      "headTitle": "أنشطة وتجارب تناسب رحلتك",
+      "headSub": "اكتشف تجارب تناسب رحلتك",
+      "fields": [
+        {
+          "label": "أين أنت الآن؟",
+          "value": "دهب – جنوب سيناء",
+          "icon": "pin"
+        },
+        {
+          "label": "تاريخ الوصول",
+          "value": "اليوم",
+          "icon": "calendar"
+        },
+        {
+          "label": "عدد المشاركين",
+          "value": "2 مشتركين",
+          "icon": "users"
+        },
+        {
+          "label": "نوع النشاط",
+          "value": "كل الأنشطة",
+          "icon": "camera"
+        }
+      ]
+    },
+    {
+      "key": "transport",
+      "label": "مواصلات",
+      "icon": "car",
+      "order": 2,
+      "headTitle": "سيارات تناسب رحلتك",
+      "headSub": "اختر السيارة المناسبة لرحلتك واستمتع بتنقل مريح وآمن",
+      "fields": [
+        {
+          "label": "مكان الاستلام",
+          "value": "شرم الشيخ – المطار",
+          "icon": "pin"
+        },
+        {
+          "label": "تاريخ الاستلام",
+          "value": "10 يونيو 2025",
+          "icon": "calendar"
+        },
+        {
+          "label": "تاريخ التسليم",
+          "value": "15 يونيو 2025",
+          "icon": "calendar"
+        },
+        {
+          "label": "وقت الاستلام",
+          "value": "9:30 Am",
+          "icon": "clock"
+        }
+      ]
+    },
+    {
+      "key": "guides",
+      "label": "مرشد سياحي",
+      "icon": "user",
+      "order": 3,
+      "headTitle": "مرشدون يناسبون رحلتك",
+      "headSub": "اختر المرشد المناسب واستمتع بتجربة سياحية مميزة",
+      "fields": [
+        {
+          "label": "المكان",
+          "value": "الأقصر – مصر",
+          "icon": "pin"
+        },
+        {
+          "label": "تاريخ الوصول",
+          "value": "10 يونيو 2025",
+          "icon": "calendar"
+        },
+        {
+          "label": "الوقت",
+          "value": "9.00 Am",
+          "icon": "clock"
+        },
+        {
+          "label": "اللغة",
+          "value": "العربية",
+          "icon": "globe"
+        }
+      ]
+    }
+  ],
+  "sectionCopy": [
+    {
+      "key": "home.trending",
+      "title": "أكثر الرحلات حجزًا",
+      "highlight": "حجزًا",
+      "sub": "الوجهات الأكثر طلبًا هذا الموسم بأسعار مخفّضة"
+    },
+    {
+      "key": "offers",
+      "title": "باقات رحلات متكاملة",
+      "highlight": "متكاملة",
+      "sub": "فندق + أنشطة + تجارب في باقة واحدة بسعر أوفر."
+    },
+    {
+      "key": "bookings",
+      "title": "حجوزاتي",
+      "highlight": null,
+      "sub": "تابع حجوزاتك، اعرض التفاصيل وقم بإدارة رحلاتك بسهولة"
+    },
+    {
+      "key": "reviews",
+      "title": "آراء العملاء",
+      "highlight": "العملاء",
+      "sub": "تجارب مسافرين خططوا رحلاتهم عبر رحلتي"
+    },
+    {
+      "key": "hotel.rooms",
+      "title": "اختر غرفتك",
+      "highlight": null,
+      "sub": "اختر الغرفة الأنسب لإقامتك واستمتع براحة تناسب رحلتك"
+    },
+    {
+      "key": "hotel.amenities",
+      "title": "المميزات",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "hotel.about",
+      "title": "نبذة عن الفندق",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "hotel.stay",
+      "title": "ملخص إقامتك",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "checkout.travelers",
+      "title": "بيانات المسافرين",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "checkout.contact",
+      "title": "بيانات التواصل",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "checkout.payment",
+      "title": "مراجعة الحجز والدفع",
+      "highlight": null,
+      "sub": "راجع تفاصيل حجزك واختر طريقة الدفع المناسبة"
+    },
+    {
+      "key": "checkout.cancellation",
+      "title": "سياسة الإلغاء",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "checkout.method",
+      "title": "طريقة الدفع",
+      "highlight": null,
+      "sub": "اختر طريقة الدفع المفضلة لديك"
+    },
+    {
+      "key": "checkout.summary",
+      "title": "ملخص الحجز",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.profile",
+      "title": "الملف الشخصي",
+      "highlight": null,
+      "sub": "إدارة بياناتك الشخصية وتفضيلاتك"
+    },
+    {
+      "key": "account.basic",
+      "title": "المعلومات الأساسية",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.favorites",
+      "title": "المفضلة",
+      "highlight": null,
+      "sub": "كل الأماكن والأنشطة التي حفظتها لترجع إليها لاحقًا"
+    },
+    {
+      "key": "hotels",
+      "title": "الفنادق",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "about",
+      "title": "من نحن",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "login",
+      "title": "تسجيل الدخول",
+      "highlight": "الدخول",
+      "sub": "أدخل بياناتك لمتابعة حجوزاتك ورحلاتك المحفوظة"
+    },
+    {
+      "key": "login.form",
+      "title": "بيانات الدخول",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "admin",
+      "title": "لوحة التحكم",
+      "highlight": "التحكم",
+      "sub": "محتوى القاعدة والمستخدمون — للأدمن فقط"
+    },
+    {
+      "key": "register",
+      "title": "إنشاء حساب جديد",
+      "highlight": "حساب جديد",
+      "sub": "سجّل مرة واحدة وتابع حجوزاتك ورحلاتك المحفوظة من مكان واحد"
+    },
+    {
+      "key": "register.form",
+      "title": "بيانات الحساب",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.payments",
+      "title": "وسائل الدفع",
+      "highlight": null,
+      "sub": "أدر بطاقاتك المحفوظة واختر البطاقة الافتراضية للحجز"
+    },
+    {
+      "key": "account.cards",
+      "title": "البطاقات المحفوظة",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.addCard",
+      "title": "إضافة بطاقة جديدة",
+      "highlight": null,
+      "sub": "نحفظ نوع البطاقة وآخر 4 أرقام فقط — لا نحفظ الرقم الكامل ولا CVV"
+    },
+    {
+      "key": "account.notifications",
+      "title": "الإشعارات",
+      "highlight": null,
+      "sub": "تابع تحديثات حجوزاتك واختر ما تريد أن يصلك"
+    },
+    {
+      "key": "account.notify.channels",
+      "title": "قنوات الإشعار",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.notify.topics",
+      "title": "ما يصلك من إشعارات",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "account.notify.inbox",
+      "title": "آخر الإشعارات",
+      "highlight": null,
+      "sub": null
+    },
+    {
+      "key": "admin.roles",
+      "title": "الأدوار والصلاحيات",
+      "highlight": null,
+      "sub": "ما يستطيعه كل دور — يُقرأ من مجموعتي Role و Permission"
+    },
+    {
+      "key": "admin.users",
+      "title": "المستخدمون",
+      "highlight": null,
+      "sub": "تغيير صفة أي حساب — لا يمكن إزالة آخر أدمن"
+    },
+    {
+      "key": "checkout.confirm",
+      "title": "تم تأكيد حجزك",
+      "highlight": null,
+      "sub": "أرسلنا تفاصيل الحجز إلى بريدك، وتجده دائمًا في صفحة حجوزاتي"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "key": "card",
+      "title": "بطاقة بنكية",
+      "note": "ادفع بأمان باستخدام بطاقتك البنكية",
+      "brands": [
+        "VISA",
+        "MC",
+        "ميزة"
+      ],
+      "order": 0
+    },
+    {
+      "key": "apple",
+      "title": "Apple Pay",
+      "note": "ادفع باستخدام Apple Pay",
+      "brands": [
+        "Pay"
+      ],
+      "order": 1
+    },
+    {
+      "key": "cash",
+      "title": "الدفع عند الوصول",
+      "note": "ادفع نقدًا عند الوصول إلى الفندق",
+      "brands": [
+        "Cash"
+      ],
+      "order": 2
+    }
+  ],
+  "bookingTabs": [
+    {
+      "key": "upcoming",
+      "label": "القادمة",
+      "icon": "calendar",
+      "order": 0
+    },
+    {
+      "key": "pending",
+      "label": "في انتظار التأكيد",
+      "icon": "clock",
+      "order": 1
+    },
+    {
+      "key": "cancelled",
+      "label": "الملغاة",
+      "icon": "xcircle",
+      "order": 2
+    }
+  ],
+  "favoriteFilters": [
+    {
+      "key": "all",
+      "label": "الكل",
+      "order": 0
+    },
+    {
+      "key": "activities",
+      "label": "أنشطة",
+      "order": 1
+    },
+    {
+      "key": "hotels",
+      "label": "فنادق",
+      "order": 2
+    },
+    {
+      "key": "transport",
+      "label": "مواصلات",
+      "order": 3
+    },
+    {
+      "key": "packages",
+      "label": "باقات",
+      "order": 4
+    }
+  ],
+  "accountNav": [
+    {
+      "key": "profile",
+      "label": "الملف الشخصي",
+      "href": "/account",
+      "icon": "user",
+      "order": 0,
+      "requires": null
+    },
+    {
+      "key": "favorites",
+      "label": "المفضلة",
+      "href": "/account/favorites",
+      "icon": "heart",
+      "order": 1,
+      "requires": null
+    },
+    {
+      "key": "payments",
+      "label": "وسائل الدفع",
+      "href": "/account/payments",
+      "icon": "wallet",
+      "order": 2,
+      "requires": null
+    },
+    {
+      "key": "alerts",
+      "label": "الإشعارات",
+      "href": "/account/notifications",
+      "icon": "bell",
+      "order": 3,
+      "requires": null
+    },
+    {
+      "key": "admin",
+      "label": "لوحة التحكم",
+      "href": "/admin",
+      "icon": "building",
+      "order": 4,
+      "requires": "admin.access"
+    }
+  ],
+  "sortOptions": [
+    {
+      "key": "sort-0",
+      "label": "أعلى تقييمًا",
+      "order": 0
+    },
+    {
+      "key": "sort-1",
+      "label": "الأقل سعرًا",
+      "order": 1
+    },
+    {
+      "key": "sort-2",
+      "label": "الأعلى سعرًا",
+      "order": 2
+    },
+    {
+      "key": "sort-3",
+      "label": "الأحدث",
+      "order": 3
+    }
+  ],
+  "about": {
+    "key": "about",
+    "title": "نظرة عامة على المشروع",
+    "highlight": "المشروع",
+    "paragraphs": [
+      "رحلتي هو موقع سياحي متكامل يهدف إلى تبسيط تجربة تخطيط الرحلات من خلال جمع جميع خدمات السفر داخل منصة واحدة. يساعد المستخدم على تنظيم رحلته بسهولة، سواء قبل السفر أو أثناء وجوده في الوجهة السياحية، مما يقلل الحاجة إلى التنقل بين عدة مواقع لإتمام خطوات الرحلة المختلفة.",
+      "يركز المشروع على تقديم تجربة متكاملة تبدأ باختيار الوجهة المناسبة، ثم تخطيط برنامج الرحلة وفقًا لمدة السفر والميزانية والاهتمامات، مع إمكانية حجز الخدمات المرتبطة بالرحلة من مكان واحد، بالإضافة إلى مساعدة المستخدم على اكتشاف الأنشطة المتاحة أثناء رحلته واتخاذ قرارات أسرع وأكثر سهولة."
+    ],
+    "pillars": [
+      {
+        "icon": "compass",
+        "title": "منصة واحدة لجميع خدمات السفر",
+        "text": "الفنادق، الأنشطة، المواصلات والمرشدون السياحيون في مكان واحد دون التنقل بين عدة مواقع."
+      },
+      {
+        "icon": "sparkle",
+        "title": "تخطيط مخصص لرحلتك",
+        "text": "برنامج رحلة يُبنى وفقًا لمدة السفر والميزانية والاهتمامات، مع اقتراحات مناسبة لكل يوم."
+      },
+      {
+        "icon": "ticket",
+        "title": "حجز وإدارة بسهولة",
+        "text": "احجز كل خدمات رحلتك من مكان واحد وتابع حجوزاتك وفواتيرك من لوحة واحدة."
+      }
+    ]
+  },
+  "checkout": {
+    "key": "draft",
+    "hotelSlug": "blue-lagoon-dahab",
+    "roomSlug": "deluxe-double",
+    "nights": 5,
+    "taxes": 2000,
+    "rows": [
+      {
+        "key": "تاريخ الوصول",
+        "val": "10 يونيو 2025",
+        "icon": "calendar"
+      },
+      {
+        "key": "تاريخ المغادرة",
+        "val": "15 يونيو 2025",
+        "icon": "calendar"
+      },
+      {
+        "key": "الغرف والضيوف",
+        "val": "1 غرفة · 2 ضيوف",
+        "icon": "users"
+      },
+      {
+        "key": "المدة",
+        "val": "5 ليالي",
+        "icon": "clock"
+      }
+    ],
+    "stayFacts": [
+      {
+        "key": "تاريخ الوصول",
+        "val": "10 يونيو 2025",
+        "icon": "calendar"
+      },
+      {
+        "key": "تاريخ المغادرة",
+        "val": "15 يونيو 2025",
+        "icon": "calendar"
+      },
+      {
+        "key": "المدة",
+        "val": "5 ليالي",
+        "icon": "clock"
+      },
+      {
+        "key": "الغرف والضيوف",
+        "val": "1 غرفة · 2 ضيوف",
+        "icon": "users"
+      }
+    ],
+    "cancellationFree": "إلغاء مجاني حتى 8 يونيو 2025 قبل الساعة 23:59.",
+    "cancellationAfter": "بعد هذا التاريخ سيتم خصم تكلفة ليلة واحدة.",
+    "steps": [
+      {
+        "step": 1,
+        "label": "بيانات المسافرين"
+      },
+      {
+        "step": 2,
+        "label": "الدفع"
+      },
+      {
+        "step": 3,
+        "label": "تأكيد الحجز"
+      }
+    ],
+    "honorifics": [
+      "السيد",
+      "السيدة",
+      "الآنسة"
+    ]
+  },
+  "notificationSettings": [
+    {
+      "key": "email",
+      "label": "البريد الإلكتروني",
+      "description": "استلام الإشعارات على بريدك",
+      "icon": "mail",
+      "group": "channel",
+      "order": 0
+    },
+    {
+      "key": "sms",
+      "label": "رسائل SMS",
+      "description": "تنبيهات قصيرة على رقم هاتفك",
+      "icon": "phone",
+      "group": "channel",
+      "order": 1
+    },
+    {
+      "key": "push",
+      "label": "إشعارات الموقع",
+      "description": "تنبيهات فورية داخل المتصفح",
+      "icon": "bell",
+      "group": "channel",
+      "order": 2
+    },
+    {
+      "key": "bookings",
+      "label": "تحديثات الحجوزات",
+      "description": "تأكيد الحجز، التعديلات، والإلغاء",
+      "icon": "ticket",
+      "group": "topic",
+      "order": 0
+    },
+    {
+      "key": "offers",
+      "label": "العروض والخصومات",
+      "description": "باقات وأسعار مخفّضة تناسب رحلاتك",
+      "icon": "tag",
+      "group": "topic",
+      "order": 1
+    },
+    {
+      "key": "reminders",
+      "label": "تذكيرات الرحلة",
+      "description": "موعد الوصول، الأنشطة، ومواعيد التسليم",
+      "icon": "clock",
+      "group": "topic",
+      "order": 2
+    }
+  ],
+  "demo": {
+    "bookings": [
+      {
+        "ref": "RH12345678",
+        "status": "ok",
+        "statusLabel": "تم تأكيد الحجز",
+        "title": "منتجع بلو لاجون دهب",
+        "location": "شرم الشيخ – مصر",
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=480&h=360&q=72",
+        "facts": [
+          {
+            "label": "10 يونيو – 15 يونيو 2025",
+            "icon": "calendar"
+          },
+          {
+            "label": "2 شخصان",
+            "icon": "users"
+          },
+          {
+            "label": "5 ليال",
+            "icon": "clock"
+          }
+        ],
+        "total": "13,200 EGP",
+        "actions": [
+          "details",
+          "invoice",
+          "cancel"
+        ],
+        "tab": "upcoming",
+        "order": 0
+      },
+      {
+        "ref": "RH12345678",
+        "status": "wait",
+        "statusLabel": "في انتظار التأكيد",
+        "title": "سفاري وادي قني – دهب",
+        "location": "دهب – جنوب سيناء",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=480&h=360&q=72",
+        "facts": [
+          {
+            "label": "12 يونيو 2025",
+            "icon": "calendar"
+          },
+          {
+            "label": "2 شخصان",
+            "icon": "users"
+          },
+          {
+            "label": "4 ساعات",
+            "icon": "clock"
+          }
+        ],
+        "total": "1,300 EGP",
+        "actions": [
+          "details",
+          "cancel"
+        ],
+        "tab": "pending",
+        "order": 1
+      },
+      {
+        "ref": "RH12345678",
+        "status": "void",
+        "statusLabel": "تم إلغاء الحجز",
+        "title": "هيونداي أكسنت",
+        "location": "استلام: دهب – جنوب سيناء",
+        "image": "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=480&h=360&q=72",
+        "facts": [
+          {
+            "label": "10 يونيو – 15 يونيو 2025",
+            "icon": "calendar"
+          },
+          {
+            "label": "5 مقاعد",
+            "icon": "users"
+          },
+          {
+            "label": "5 أيام",
+            "icon": "clock"
+          }
+        ],
+        "total": "1,100 EGP",
+        "actions": [
+          "details"
+        ],
+        "tab": "cancelled",
+        "order": 2
+      },
+      {
+        "ref": "RH20481123",
+        "status": "ok",
+        "statusLabel": "تم تأكيد الحجز",
+        "title": "فندق وينتر بالاس الأقصر",
+        "location": "الأقصر – مصر",
+        "image": "https://images.unsplash.com/photo-1585544314038-a0d3769d0193?auto=format&fit=crop&w=480&h=360&q=72",
+        "facts": [
+          {
+            "label": "3 يوليو – 6 يوليو 2025",
+            "icon": "calendar"
+          },
+          {
+            "label": "2 شخصان",
+            "icon": "users"
+          },
+          {
+            "label": "3 ليال",
+            "icon": "clock"
+          }
+        ],
+        "total": "14,300 EGP",
+        "actions": [
+          "details",
+          "invoice",
+          "cancel"
+        ],
+        "tab": "upcoming",
+        "order": 3
+      },
+      {
+        "ref": "RH20481124",
+        "status": "wait",
+        "statusLabel": "في انتظار التأكيد",
+        "title": "جولة معابد الكرنك والأقصر",
+        "location": "الأقصر – مصر",
+        "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=480&h=360&q=72",
+        "facts": [
+          {
+            "label": "4 يوليو 2025",
+            "icon": "calendar"
+          },
+          {
+            "label": "2 شخصان",
+            "icon": "users"
+          },
+          {
+            "label": "4 ساعات",
+            "icon": "clock"
+          }
+        ],
+        "total": "1,240 EGP",
+        "actions": [
+          "details",
+          "cancel"
+        ],
+        "tab": "pending",
+        "order": 4
+      }
+    ],
+    "favorites": [
+      {
+        "kind": "hotels",
+        "slug": "blue-lagoon-dahab",
+        "name": "منتجع بلو لاجون دهب",
+        "location": "دهب، جنوب سيناء – مصر",
+        "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.8,
+        "fromLabel": "ابتداءً من",
+        "price": "2,240 EGP",
+        "unit": "لليلة الواحدة",
+        "cta": "عرض التفاصيل",
+        "href": "/hotels/blue-lagoon-dahab",
+        "locationIcon": null,
+        "order": 0
+      },
+      {
+        "kind": "activities",
+        "slug": "dahab-diving",
+        "name": "رحلة غوص للمبتدئين في دهب",
+        "location": "ساعتان",
+        "locationIcon": "clock",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.8,
+        "fromLabel": "ابتداءً من",
+        "price": "1,200 EGP",
+        "unit": "للفرد الواحد",
+        "cta": "احجز الآن",
+        "href": "/",
+        "order": 1
+      },
+      {
+        "kind": "transport",
+        "slug": "hyundai-accent",
+        "name": "هيونداي أكسنت",
+        "location": "دهب – جنوب سيناء",
+        "image": "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.9,
+        "fromLabel": "إيجار اليوم",
+        "price": "1,200 EGP",
+        "unit": "لليوم الواحد",
+        "cta": "احجز الآن",
+        "href": "/",
+        "locationIcon": null,
+        "order": 2
+      },
+      {
+        "kind": "hotels",
+        "slug": "marsa-alam-pearl",
+        "name": "منتجع مرسى علم بيرل",
+        "location": "مرسى علم – مصر",
+        "locationIcon": null,
+        "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.8,
+        "fromLabel": "ابتداءً من",
+        "price": "3,450 EGP",
+        "unit": "لليلة الواحدة",
+        "cta": "عرض التفاصيل",
+        "href": "/hotels/marsa-alam-pearl",
+        "order": 3
+      },
+      {
+        "kind": "activities",
+        "slug": "snorkel-ras-mohamed",
+        "name": "سنوركلينج في محمية رأس محمد",
+        "location": "6 ساعات",
+        "locationIcon": "clock",
+        "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.9,
+        "fromLabel": "ابتداءً من",
+        "price": "950 EGP",
+        "unit": "للفرد الواحد",
+        "cta": "احجز الآن",
+        "href": "/",
+        "order": 4
+      },
+      {
+        "kind": "transport",
+        "slug": "mercedes-e200",
+        "name": "مرسيدس E200",
+        "location": "القاهرة – مصر",
+        "locationIcon": null,
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=640&h=440&q=72",
+        "rating": 4.9,
+        "fromLabel": "إيجار اليوم",
+        "price": "3,200 EGP",
+        "unit": "لليوم الواحد",
+        "cta": "احجز الآن",
+        "href": "/",
+        "order": 5
+      }
+    ],
+    "cards": [
+      {
+        "brand": "visa",
+        "last4": "4242",
+        "holder": "AHMED MOHAMED",
+        "expMonth": 8,
+        "expYear": 2028,
+        "isDefault": true
+      },
+      {
+        "brand": "meeza",
+        "last4": "8830",
+        "holder": "AHMED MOHAMED",
+        "expMonth": 3,
+        "expYear": 2027,
+        "isDefault": false
+      }
+    ],
+    "notifications": [
+      {
+        "title": "تم تأكيد حجزك في منتجع بلو لاجون دهب",
+        "body": "رقم الحجز RH12345678 — الوصول 10 يونيو 2025. يمكنك تنزيل الفاتورة من صفحة حجوزاتي.",
+        "kind": "booking",
+        "read": false
+      },
+      {
+        "title": "خصم 22% على باقة إسطنبول الكلاسيكية",
+        "body": "العرض ساري حتى نهاية الأسبوع — 5 أيام و4 ليالٍ بسعر 7,450 EGP للفرد.",
+        "kind": "offer",
+        "read": false
+      },
+      {
+        "title": "سفاري وادي قني في انتظار التأكيد",
+        "body": "سنبلغك خلال 24 ساعة بعد مراجعة توفّر المقاعد للرحلة يوم 12 يونيو.",
+        "kind": "booking",
+        "read": true
+      },
+      {
+        "title": "مرحبًا بك في رحلتي",
+        "body": "أكمل بيانات ملفك الشخصي وأضف وسيلة دفع لتسريع حجوزاتك القادمة.",
+        "kind": "system",
+        "read": true
+      },
+      {
+        "title": "باقة سيوة الصحراوية متاحة بخصم 21%",
+        "body": "أربعة أيام في الواحة مع سفاري الكثبان ومبيت صحراوي — 4,800 EGP للفرد بدل 6,100.",
+        "kind": "offer",
+        "read": false
+      },
+      {
+        "title": "تذكير: رحلتك إلى الأقصر بعد 3 أيام",
+        "body": "راجع تفاصيل الوصول ووسيلة النقل من صفحة حجوزاتي، ولا تنسَ إثبات الهوية.",
+        "kind": "booking",
+        "read": false
+      }
+    ]
+  },
+  "permissions": [
+    {
+      "key": "content.read",
+      "label": "تصفّح المحتوى والحجز",
+      "group": "content",
+      "order": 0
+    },
+    {
+      "key": "content.write",
+      "label": "إدارة المحتوى والأسعار",
+      "group": "content",
+      "order": 1
+    },
+    {
+      "key": "bookings.own",
+      "label": "إدارة حجوزاته ومفضلته ووسائل دفعه",
+      "group": "bookings",
+      "order": 2
+    },
+    {
+      "key": "bookings.all",
+      "label": "الاطلاع على حجوزات كل المستخدمين",
+      "group": "bookings",
+      "order": 3
+    },
+    {
+      "key": "users.read",
+      "label": "عرض قائمة المستخدمين",
+      "group": "users",
+      "order": 4
+    },
+    {
+      "key": "users.write",
+      "label": "تغيير صفات المستخدمين",
+      "group": "users",
+      "order": 5
+    },
+    {
+      "key": "admin.access",
+      "label": "الدخول إلى لوحة التحكم",
+      "group": "system",
+      "order": 6
+    }
+  ],
+  "roles": [
+    {
+      "key": "admin",
+      "label": "أدمن",
+      "description": "صلاحية كاملة على المحتوى والمستخدمين ولوحة التحكم.",
+      "permissions": [
+        "content.read",
+        "content.write",
+        "bookings.own",
+        "bookings.all",
+        "users.read",
+        "users.write",
+        "admin.access"
+      ],
+      "order": 0
+    },
+    {
+      "key": "user",
+      "label": "مستخدم",
+      "description": "تصفّح وحجز، وإدارة بياناته وحجوزاته الخاصة فقط.",
+      "permissions": [
+        "content.read",
+        "bookings.own"
+      ],
+      "order": 1
+    }
+  ]
+}
