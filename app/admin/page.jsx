@@ -1,12 +1,15 @@
+import Link from 'next/link';
 import AccountSidebar from '../components/AccountSidebar';
 import { safeMetadata } from '../lib/metadata';
 import RolesPanel from '../components/RolesPanel';
 import UsersPanel from '../components/UsersPanel';
-import { Building, Sparkle } from '../components/Icons';
+import { Building, Edit, Sparkle } from '../components/Icons';
+import { Icon } from '../components/iconMap';
 import { revalidateContentAction } from '../lib/actions';
 import prisma from '../lib/prisma';
+import { collectionList } from '../lib/content-schema';
 import { getPermissions, getRoles, requirePermission } from '../lib/permissions';
-import { getAccountNav, getSectionCopy, getSite, getUsers } from '../lib/queries';
+import { getAccountNav, getAdminCounts, getSectionCopy, getSite, getUsers } from '../lib/queries';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,39 +30,23 @@ export default async function AdminPage() {
     getPermissions(),
   ]);
 
-  const users = can('users.read') ? await getUsers() : [];
-  const adminCount = users.filter((u) => u.role === 'admin').length;
-
-  // 11 عدّة متسلسلة كانت ≈ 11 × 200ms — الآن موجة واحدة
-  const [
-    hotels, rooms, activities, cars, guides, packages, trending, reviews, userCount, bookingCount,
-  ] = await Promise.all([
-    prisma.hotel.count(),
-    prisma.room.count(),
-    prisma.activity.count(),
-    prisma.car.count(),
-    prisma.guide.count(),
-    prisma.package.count(),
-    prisma.trendingTrip.count(),
-    prisma.review.count(),
-    prisma.user.count(),
-    can('bookings.all')
-      ? prisma.booking.count()
-      : prisma.booking.count({ where: { userId: user.id } }),
+  /**
+   * العدّادات وجدول المستخدمين معًا.
+   * العدّادات طلب واحد مخزَّن (getAdminCounts)، وكانت عشر عدّات مستقلة
+   * تكلّف ثوانيَ على هذا الكلاستر. من لا يملك bookings.all يرى حجوزاته وحدها،
+   * وهي العدّة الوحيدة الخاصة بالمستخدم فتُطلب على حدة.
+   */
+  const [counts, users, ownBookings] = await Promise.all([
+    getAdminCounts(),
+    can('users.read') ? getUsers() : [],
+    can('bookings.all') ? null : prisma.booking.count({ where: { userId: user.id } }),
   ]);
 
-  const counts = {
-    'فنادق': hotels,
-    'غرف': rooms,
-    'أنشطة': activities,
-    'مواصلات': cars,
-    'مرشدون': guides,
-    'باقات': packages,
-    'رحلات رائجة': trending,
-    'آراء': reviews,
-    'مستخدمون': userCount,
-    'حجوزات': bookingCount,
-  };
+  const adminCount = users.filter((u) => u.role === 'admin').length;
+  const bookingCount = ownBookings ?? counts.bookings;
+  // الجدول محمّل أصلًا: عدّه يُبقي البطاقة والجدول متّفقَين بلا انتظار مهلة
+  const userCount = can('users.read') ? users.length : counts.users;
+  const canEditContent = can('content.write');
 
   return (
     <div className="container account">
@@ -84,12 +71,46 @@ export default async function AdminPage() {
         )}
 
         <div className="admin-grid">
-          {Object.entries(counts).map(([label, value]) => (
-            <div className="admin-stat" key={label}>
-              <strong>{value}</strong>
-              <span>{label}</span>
-            </div>
-          ))}
+          {collectionList.map((collection) => {
+            const value = counts[collection.key] ?? 0;
+
+            const body = (
+              <>
+                <strong>{value}</strong>
+                <span>
+                  <Icon name={collection.icon} size={13} />
+                  {collection.label}
+                </span>
+                {canEditContent && (
+                  <span className="admin-stat__cta">
+                    <Edit size={12} />
+                    {collection.noCreate ? 'تحرير وحذف' : 'إضافة وتعديل'}
+                  </span>
+                )}
+              </>
+            );
+
+            return canEditContent ? (
+              <Link
+                className="admin-stat admin-stat--link"
+                href={`/admin/content/${collection.key}`}
+                key={collection.key}
+              >
+                {body}
+              </Link>
+            ) : (
+              <div className="admin-stat" key={collection.key}>{body}</div>
+            );
+          })}
+
+          <div className="admin-stat">
+            <strong>{userCount}</strong>
+            <span>مستخدمون</span>
+          </div>
+          <div className="admin-stat">
+            <strong>{bookingCount}</strong>
+            <span>حجوزات</span>
+          </div>
         </div>
 
         <RolesPanel

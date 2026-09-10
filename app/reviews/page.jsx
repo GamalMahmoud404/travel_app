@@ -1,4 +1,5 @@
 import SectionHead from '../components/SectionHead';
+import AddReviewForm from '../components/AddReviewForm';
 import { safeMetadata } from '../lib/metadata';
 import { Star } from '../components/Icons';
 import {
@@ -20,6 +21,9 @@ export default async function ReviewsPage() {
   return (
     <section className="container sect">
       <SectionHead title={head.title} highlight={head.highlight} sub={head.sub} />
+
+      {/* النموذج يقرأ الجلسة في المتصفح، فتبقى الصفحة ثابتة (ISR) */}
+      <AddReviewForm />
 
       <div className="grid-3" style={{ marginTop: 40 }}>
         {reviews.map((r) => (

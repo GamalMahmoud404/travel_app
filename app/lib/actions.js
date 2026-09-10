@@ -1,6 +1,6 @@
 'use server';
 
-import { revalidatePath, revalidateTag } from 'next/cache';
+import { revalidatePath, updateTag } from 'next/cache';
 import { redirect } from 'next/navigation';
 import prisma from './prisma';
 import {
@@ -16,6 +16,7 @@ import { DB_DOWN_MESSAGE, isDbUnreachable } from './db-status';
 import { getCheckoutSummary } from './queries';
 import { buildFavorite } from './favorites';
 import { permissionsOf } from './permissions';
+import { collections, parseField } from './content-schema';
 
 const safeNext = (value) =>
   typeof value === 'string' && value.startsWith('/') && !value.startsWith('//') ? value : '/';
@@ -103,6 +104,7 @@ export async function registerAction(_prev, formData) {
     },
   });
 
+  updateTag('users'); // جدول لوحة التحكم مخزَّن
   await startSession(user);
   redirect(next);
 }
@@ -145,6 +147,7 @@ export async function updateProfileAction(_prev, formData) {
   });
 
   await refreshUserHint(updated);
+  updateTag('users'); // الاسم والصورة يظهران في جدول لوحة التحكم
   revalidatePath('/', 'layout');
   return { ok: 'تم حفظ التعديلات.' };
 }
@@ -352,7 +355,63 @@ export async function setUserRoleAction(formData) {
   }
 
   await prisma.user.update({ where: { id }, data: { role } });
+  updateTag('users');
   revalidatePath('/admin');
+}
+
+/* ==========================================================================
+   رأي العميل — يكتبه المستخدم من صفحة «آراء العملاء» لا من لوحة التحكم.
+
+   الاسم والصورة من ملفه الشخصي (لا يكتبهما)، والتحقق من نفس وصف الحقول الذي
+   تستعمله اللوحة — فرسائل الخطأ واحدة في الموضعين.
+   رأي واحد لكل مستخدم: الثاني يُحدّث الأول بدل أن يُكرّره في الصفحة.
+   ========================================================================== */
+
+const REVIEW_TEXT_MAX = 600;
+
+export async function addReviewAction(_prev, formData) {
+  const user = await getSessionUser();
+  const values = {
+    trip: String(formData.get('trip') ?? ''),
+    rating: String(formData.get('rating') ?? ''),
+    text: String(formData.get('text') ?? ''),
+  };
+  const fail = (error) => ({ error, values });
+
+  if (!user) return fail('سجّل الدخول أولًا لتشارك رأيك.');
+
+  const fields = collections.reviews.fields;
+  const data = {};
+  for (const name of ['trip', 'rating', 'text']) {
+    const parsed = parseField(fields.find((f) => f.name === name), values[name]);
+    if (!parsed.ok) return fail(parsed.error);
+    data[name] = parsed.value;
+  }
+
+  if (data.text.length > REVIEW_TEXT_MAX) {
+    return fail(`نص الرأي أطول من ${REVIEW_TEXT_MAX} حرفًا — اختصره قليلًا.`);
+  }
+
+  try {
+    const mine = await prisma.review.findFirst({
+      where: { userId: user.id },
+      select: { id: true },
+    });
+
+    const row = { ...data, name: user.fullName || user.name, avatar: user.avatar, userId: user.id };
+
+    if (mine) await prisma.review.update({ where: { id: mine.id }, data: row });
+    else await prisma.review.create({ data: { ...row, order: await prisma.review.count() } });
+
+    updateTag('content'); // صفحة الآراء والرئيسية تقرآن getReviews المخزَّنة
+    revalidatePath('/reviews');
+    revalidatePath('/admin');
+
+    return { ok: mine ? 'حدّثنا رأيك — شكرًا لك.' : 'نُشر رأيك — شكرًا لمشاركتك.' };
+  } catch (error) {
+    if (isDbUnreachable(error)) return fail(DB_DOWN_MESSAGE);
+    throw error;
+  }
 }
 
 /* إبطال مخزَّن المحتوى بعد أي تعديل عليه من لوحة التحكم */
@@ -361,7 +420,7 @@ export async function revalidateContentAction() {
   if (!actor) redirect('/login?next=%2Fadmin');
   if (!(await permissionsOf(actor)).has('content.write')) return;
 
-  revalidateTag('content');
+  updateTag('content');
   revalidatePath('/admin');
 }
 

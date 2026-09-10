@@ -201,14 +201,25 @@ model Favorite {
 
 /* ---------------------------------------------------------- آراء العملاء */
 
+/**
+ * الرأي يكتبه المستخدم من صفحة «آراء العملاء».
+ *
+ * الاسم لم يبقَ @unique: مستخدمان قد يتشاركان الاسم نفسه، فالقيد كان يمنع
+ * ثانيهما من الكتابة. صاحب الرأي يُعرَف بـ userId، وعليه يقوم شرط «رأي واحد
+ * لكل مستخدم» (يُطبَّق في الإجراء لا بفهرس فريد — فالفهرس الفريد في MongoDB
+ * لا يسمح بأكثر من مستند بلا قيمة، والآراء المزروعة بلا صاحب).
+ * الاسم والصورة تُنسخان لحظة الكتابة، فيبقى الرأي معروضًا كما نُشر.
+ */
 model Review {
-  id     String @id @default(auto()) @map("_id") @db.ObjectId
-  name   String @unique
+  id     String  @id @default(auto()) @map("_id") @db.ObjectId
+  name   String
   trip   String
   rating Int
   text   String
   avatar String
-  order  Int    @default(0)
+  order  Int     @default(0)
+  userId String? @db.ObjectId
+  user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 /* -------------------------------------------------------------- المستخدم */
@@ -228,6 +239,7 @@ model User {
   favorites     Favorite[]
   cards         PaymentCard[]
   notifications Notification[]
+  reviews       Review[]
   createdAt DateTime   @default(now())
 }
 

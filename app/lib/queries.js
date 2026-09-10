@@ -1,5 +1,6 @@
 import { unstable_cache } from 'next/cache';
 import prisma from './prisma';
+import { isDbUnreachable } from './db-status';
 
 /* ==========================================================================
    كل ما تعرضه الواجهة يُقرأ من MongoDB.
@@ -8,8 +9,9 @@ import prisma from './prisma';
    المستخدم) يُخزَّن في Data Cache بوسم content — أول طلب يقرأ من القاعدة،
    وما بعده يُخدَم بلا استعلام. الصفوف الخاصة بمستخدم لا تُخزَّن أبدًا.
 
-   لإبطال المخزَّن فورًا بعد تعديل المحتوى: revalidateTag('content')
-   أو مجموعة الوسم الأخص (مثل 'hotels').
+   لإبطال المخزَّن فورًا بعد تعديل المحتوى: updateTag('content') داخل إجراء
+   خادم، أو مجموعة الوسم الأخص (مثل 'hotels'). خارج الإجراءات (route handler
+   أو webhook) تُستعمل revalidateTag('content', 'max') — updateTag يرمي هناك.
    ========================================================================== */
 
 export const CONTENT_TTL = 300; // ثانية
@@ -96,9 +98,88 @@ export const getPackages = content(() => prisma.package.findMany(byOrder), 'pack
 export const getTrending = content(() => prisma.trendingTrip.findMany(byOrder), 'trending');
 export const getReviews = content(() => prisma.review.findMany(byOrder), 'reviews');
 
+/* ------------------------------------------------- عدّادات لوحة التحكم */
+
+/**
+ * عدّاد كل مجموعة — في **طلب واحد**.
+ *
+ * القياس على الكلاستر الحالي: count() الواحدة ≈ 500–870ms، والعشر عدّات على
+ * Promise.all ≈ 24 ثانية (أسوأ من التسلسل: ≈ 12) — الطبقة المشتركة تخنق
+ * العمليات المتزامنة. أما aggregate واحدة تجمعها بـ $unionWith فـ ≈ 640ms.
+ *
+ * المفتاح هنا هو اسم المجموعة في MongoDB (اسم النموذج نفسه، فلا @@map في
+ * schema.prisma) — ومنه يُشتقّ اسم مندوب Prisma في الخطة البديلة.
+ */
+const COUNTED = {
+  hotels: 'Hotel',
+  rooms: 'Room',
+  activities: 'Activity',
+  cars: 'Car',
+  guides: 'Guide',
+  packages: 'Package',
+  trending: 'TrendingTrip',
+  reviews: 'Review',
+  users: 'User',
+  bookings: 'Booking',
+};
+
+const delegateOf = (coll) => `${coll[0].toLowerCase()}${coll.slice(1)}`;
+const countStage = (coll) => [{ $count: 'n' }, { $addFields: { c: coll } }];
+
+async function readCounts() {
+  const entries = Object.entries(COUNTED);
+
+  try {
+    const [[, first], ...rest] = entries;
+    const res = await prisma.$runCommandRaw({
+      aggregate: first,
+      pipeline: [
+        ...countStage(first),
+        ...rest.map(([, coll]) => ({ $unionWith: { coll, pipeline: countStage(coll) } })),
+      ],
+      cursor: {},
+    });
+
+    const found = Object.fromEntries(res.cursor.firstBatch.map((row) => [row.c, row.n]));
+    // المجموعة الفارغة لا تُخرج صفًّا من $count — فالغائب صفر لا undefined
+    return Object.fromEntries(entries.map(([key, coll]) => [key, found[coll] ?? 0]));
+  } catch (error) {
+    if (isDbUnreachable(error)) throw error;
+
+    // خطة بديلة إن رفض الخادم $unionWith — متسلسلة عمدًا، فالتوازي هنا أبطأ
+    const counts = {};
+    for (const [key, coll] of entries) counts[key] = await prisma[delegateOf(coll)].count();
+    return counts;
+  }
+}
+
+/**
+ * العدّادات مخزَّنة بوسم content: كل تعديل محتوى يستدعي updateTag('content')
+ * فتظهر الأرقام الجديدة فورًا. المهلة القصيرة تلحق ما لا يحمل الوسم
+ * (تسجيل مستخدم جديد، حجز) خلال دقيقة.
+ */
+export const getAdminCounts = unstable_cache(readCounts, ['adminCounts'], {
+  revalidate: 60,
+  tags: ['content'],
+});
+
 /* ------------------------------------- صفوف خاصة بمستخدم — بلا تخزين */
 
-export const getUsers = () => prisma.user.findMany({ orderBy: { createdAt: 'asc' } });
+/**
+ * جدول المستخدمين في لوحة التحكم — الحقول المعروضة وحدها (لا passwordHash
+ * ولا notifyOff). مخزَّن بوسم users: كل ما يغيّر مستخدمًا (تسجيل جديد، تعديل
+ * ملف شخصي، تغيير صفة) يستدعي updateTag('users')، والمهلة القصيرة شبكة أمان
+ * إن فات موضعٌ ما.
+ */
+export const getUsers = unstable_cache(
+  () =>
+    prisma.user.findMany({
+      orderBy: { createdAt: 'asc' },
+      select: { id: true, email: true, fullName: true, phone: true, avatar: true, role: true },
+    }),
+  ['adminUsers'],
+  { revalidate: 60, tags: ['users'] },
+);
 
 export const getBookings = (userId) =>
   prisma.booking.findMany({ where: { userId }, orderBy: { order: 'asc' } });
